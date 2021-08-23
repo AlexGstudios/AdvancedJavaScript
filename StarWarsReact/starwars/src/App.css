@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+h3{
+    color: aqua;
+}
+
+p{
+    color: aqua;
+}
+p:hover{
+    color: brown;
+}
