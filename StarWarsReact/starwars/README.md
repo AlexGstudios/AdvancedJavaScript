@@ -1,3 +1,5 @@
+This is a school assignment for "Advanced JavaScript". This will be reviewed by a teacher and will be taken down if the code is deemed bad.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
