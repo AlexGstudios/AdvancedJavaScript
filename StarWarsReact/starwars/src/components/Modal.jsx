@@ -7,19 +7,24 @@ export const Modal = ({ open, onClose, people, title}) => {
     const [isFalse, setIsFalse] = useState(false);
 
     useEffect(() => {
+        if(!open){
+            setInfo([]);
+            return;
+        }
         const fetching = async () => {
             let i = 0;
             let list = [];
             for(i; i < people.length; i++){
                 const res = await fetch(people[i]);
                 const data = await res.json();
-                list.push(data); 
+                list.push(data);
+                console.log('x');
             }
             setInfo(list);
             setIsFalse(true);
         }
         fetching();
-    }, [people]);
+    }, [people, open]);
 
     let sortList = [];
     info.map((char) => sortList.push(char))
