@@ -1,14 +1,46 @@
 body{
     background-color: black;
-}
-
-h3{
     color: aqua;
 }
 
-p{
-    color: aqua;
+.view{
+    position: relative;
+    text-align: center;
 }
+
 p:hover{
     color: brown;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.Modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    background-color: darkorange;
+    color: black;
+    padding: 50px;
+    z-index: 1000;
+}
+
+.infoText{
+    width: fit-content;
+    height: auto;
+}
+
+.btnBack{
+    position: fixed;
+    right: 10%;
+    bottom: 2%;
 }
