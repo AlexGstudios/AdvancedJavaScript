@@ -18,7 +18,6 @@ export const Modal = ({ open, onClose, people, title}) => {
                 const res = await fetch(people[i]);
                 const data = await res.json();
                 list.push(data);
-                console.log('x');
             }
             setInfo(list);
             setIsFalse(true);
